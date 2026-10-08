@@ -1,6 +1,6 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="" tvg-name="TRT 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/TRT_1_logo_%282021-%29.svg/960px-TRT_1_logo_%282021-%29.svg.png",TRT 1
-https://trt.daioncdn.net/trt-1/master_1440p.m3u8?&sid=8j87ubtvyhed&app=ed3904e8-737b-4a5e-856a-1b0d7a0a94e2&ce=2
+#EXTINF:-1 tvg-id="" tvg-name="TRT 1" tvg-logo="https://i.imgur.com/j786OLG.png",TRT 1
+https://tv-trt1.medya.trt.com.tr/master.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="NOW TV" tvg-logo="https://i.ibb.co/0DpKtzT/nowtvturk.png",NOW TV
 https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8
