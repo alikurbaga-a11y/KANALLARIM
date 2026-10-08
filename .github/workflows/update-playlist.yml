@@ -8,22 +8,22 @@ on:
 jobs:
   update:
     runs-on: ubuntu-latest
-    steps:
-      - name: Depoyu Kopyala
-        uses: actions/checkout@v3
+  steps:
+    - name: Depoyu Kopyala
+      uses: actions/checkout@v3
 
-      - name: Tüm Listeleri İndir ve Birleştir
-        run: |
-          curl -sL "https://onureroz.com/indirmeler/turk/all.m3u" > KANALLAR.m3u
-          echo "" >> KANALLAR.m3u
-          curl -sL "https://iptv-org.github.io/iptv/countries/tr.m3u" >> KANALLAR.m3u
-          echo "" >> KANALLAR.m3u
-          curl -sL "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8" >> KANALLAR.m3u
+    - name: Tüm Listeleri İndir ve Birleştir
+      run: |
+        curl -sL "https://iptv-org.github.io/iptv/countries/tr.m3u" > KANALLAR.m3u
+        echo "" >> KANALLAR.m3u
+        curl -sL "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8" >> KANALLAR.m3u
+        echo "" >> KANALLAR.m3u
+        curl -sL "https://onureroz.com/indirmeler/turk/all.m3u" >> KANALLAR.m3u
 
-      - name: Değişiklikleri Kaydet
-        run: |
-          git config --global user.name "Bot"
-          git config --global user.email "bot@users.noreply.github.com"
-          git add KANALLAR.m3u
-          git commit -m "Tüm M3U Listeleri Otomatik Güncellendi" || echo "Değişiklik yok"
-          git push || echo "Push işlemi atlandı"
+    - name: Değişiklikleri Kaydet
+      run: |
+        git config --global user.name "Bot"
+        git config --global user.email "bot@users.noreply.github.com"
+        git add KANALLAR.m3u
+        git commit -m "Tüm M3U Listeleri Otomatik Güncellendi" || echo "Değişiklik yok"
+        git push || echo "Push işlemi atlandı"
