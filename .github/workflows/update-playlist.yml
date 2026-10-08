@@ -12,14 +12,18 @@ jobs:
       - name: Depoyu Kopyala
         uses: actions/checkout@v3
 
-      - name: Güncel Listeyi İndir
+      - name: Tüm Listeleri İndir ve Birleştir
         run: |
-          curl -o KANALLAR.m3u "https://onureroz.com/indirmeler/turk/all.m3u"
+          curl -s "https://onureroz.com/indirmeler/turk/all.m3u" > KANALLAR.m3u
+          echo "" >> KANALLAR.m3u
+          curl -s "https://iptv-org.github.io/iptv/countries/tr.m3u" >> KANALLAR.m3u
+          echo "" >> KANALLAR.m3u
+          curl -s "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8" >> KANALLAR.m3u
 
       - name: Değişiklikleri Kaydet
         run: |
           git config --global user.name "Bot"
           git config --global user.email "bot@users.noreply.github.com"
           git add KANALLAR.m3u
-          git commit -m "Otomatik M3U Güncellemesi" || echo "Değişiklik yok"
+          git commit -m "Tüm M3U Listeleri Otomatik Güncellendi" || echo "Değişiklik yok"
           git push
