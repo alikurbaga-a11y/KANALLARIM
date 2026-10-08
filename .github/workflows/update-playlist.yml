@@ -14,11 +14,11 @@ jobs:
 
       - name: Tüm Listeleri İndir ve Birleştir
         run: |
-          curl -s "https://onureroz.com/indirmeler/turk/all.m3u" > KANALLAR.m3u
+          curl -sL "https://onureroz.com/indirmeler/turk/all.m3u" > KANALLAR.m3u
           echo "" >> KANALLAR.m3u
-          curl -s "https://iptv-org.github.io/iptv/countries/tr.m3u" >> KANALLAR.m3u
+          curl -sL "https://iptv-org.github.io/iptv/countries/tr.m3u" >> KANALLAR.m3u
           echo "" >> KANALLAR.m3u
-          curl -s "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8" >> KANALLAR.m3u
+          curl -sL "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8" >> KANALLAR.m3u
 
       - name: Değişiklikleri Kaydet
         run: |
