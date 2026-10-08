@@ -1,4 +1,4 @@
- name: Günlük IPTV Güncelleyici
+name: Günlük IPTV Güncelleyici
 
 on:
   schedule:
