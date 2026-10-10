@@ -37,10 +37,18 @@ https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3
 # ==================== TV 8 ====================
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/Oktay2617/gunestv/main/tv_logo/tv8.png",TV 8
 https://tv8.daioncdn.net/tv8/tv8_1080p.m3u8?&sid=79924vxc2fp5&app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3
+#EXTINF:-1 tvg-logo="https://i.ibb.co/tXKXNDz/tv8.png",TV 8
+https://rkhubpaomb.turknet.ercdn.net/fwjkgpasof/tv8/tv8.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/tXKXNDz/tv8.png",TV 8
+https://tv8.daioncdn.net/tv8/tv8.m3u8?app=7ddc255a-ef47-4e81-ab14-c0e5f2949788
 
 # ==================== TV 8,5 ====================
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/Oktay2617/gunestv/main/tv_logo/tv85-tr.png",TV 8,5
 https://tv8.daioncdn.net/tv8bucuk/tv8bucuk_1080p.m3u8?&sid=79928ef2mqp9&app=bf58ab52-4865-4c81-b223-26b41009801e&ce=3
+#EXTINF:-1 tvg-logo="https://i.ibb.co/dgj3MTh/tv85.png",TV 8,5
+https://tv8.daioncdn.net/tv8bucuk/tv8bucuk.m3u8?app=bf58ab52-4865-4c81-b223-26b41009801e
+#EXTINF:-1 tvg-logo="https://i.ibb.co/dgj3MTh/tv85.png",TV 8,5
+https://rkhubpaomb.turknet.ercdn.net/fwjkgpasof/tv8bucuk/tv8bucuk.m3u8
 
 # ==================== BEYAZ TV ====================
 #EXTINF:-1 tvg-logo="https://i.ibb.co/1mftzTP/beyaz-tv.png",BEYAZ TV
