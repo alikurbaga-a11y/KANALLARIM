@@ -11,8 +11,6 @@ https://tv-trt1-esdai.medya.trt.com.tr/master.m3u8
 # ==================== NOW ====================
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/Oktay2617/gunestv/main/tv_logo/now-tr.png",NOW
 https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/Oktay2617/gunestv/main/tv_logo/now-tr.png",NOW TV Yedek
-https://www.nowtv.com.tr/canli-yayin
 
 # ==================== STAR TV ====================
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/Oktay2617/gunestv/main/tv_logo/star%20tv.png",STAR TV
