@@ -1,0 +1,15 @@
+#EXTM3U
+
+# ==================== FİLM SİTELERİ ====================
+
+#EXTINF:-1 tvg-logo="https://www.fullhdfilmizlesene.now/favicon.ico",FULL HD FİLM İZLESENE
+https://www.fullhdfilmizlesene.now/
+
+#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/favicon.ico",HD FİLM CEHENNEMİ
+https://www.hdfilmcehennemi.nl/
+
+#EXTINF:-1 tvg-logo="https://filmmakinesi.to/favicon.ico",FİLM MAKİNESİ
+https://filmmakinesi.to/
+
+#EXTINF:-1 tvg-logo="https://ufilmizle.com/favicon.ico",U FİLM İZLE
+https://ufilmizle.com/
