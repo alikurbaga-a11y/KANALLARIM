@@ -1,0 +1,9 @@
+#EXTM3U
+
+# ==================== RADYO SİTELERİ ====================
+
+#EXTINF:-1 tvg-logo="https://www.canliradyodinle.fm/favicon.ico",CANLI RADYO DİNLE
+https://www.canliradyodinle.fm/
+
+#EXTINF:-1 tvg-logo="https://karnaval.com/favicon.ico",KARNAVAL RADYO
+https://karnaval.com/
