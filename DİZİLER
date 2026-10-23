@@ -1,0 +1,9 @@
+#EXTM3U
+
+# ==================== DİZİ SİTELERİ ====================
+
+#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/favicon.ico",HD FİLM CEHENNEMİ - YABANCI DİZİ
+https://www.hdfilmcehennemi.nl/yabancidiziizle-5/
+
+#EXTINF:-1 tvg-logo="https://filmmakinesi.to/favicon.ico",FİLM MAKİNESİ - YABANCI DİZİ
+https://filmmakinesi.to/yabanci-dizi-izle-2/
