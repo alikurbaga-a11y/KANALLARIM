@@ -9,11 +9,11 @@ https://www.trt1.com.tr/diziler
 https://www.nowtv.com.tr/dizi-izle
 
 # ==================== STAR TV DİZİLER ====================
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/Oktay2617/gunestv/main/tv_logo/star%20tv.png" group-title="Ulusal Kanallar", STAR TV DİZİLER
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/Oktay2617/gunestv/main/tv_logo/star%20tv.png" group-title="Ulusal Kanallar",STAR TV DİZİLER
 https://www.startv.com.tr/
 
 # ==================== SHOW TV DİZİLER ====================
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/Oktay2617/gunestv/main/tv_logo/show%20tv.png" group-title="Ulusal Kanallar", SHOW TV DİZİLER
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/Oktay2617/gunestv/main/tv_logo/show%20tv.png" group-title="Ulusal Kanallar",SHOW TV DİZİLER
 https://www.showtv.com.tr/diziler
 
 # ==================== ATV DİZİLER ====================
