@@ -9,11 +9,11 @@ https://www.trt1.com.tr/diziler
 https://www.nowtv.com.tr/dizi-izle
 
 # ==================== STAR TV DİZİLER ====================
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/Oktay2617/gunestv/main/tv_logo/star%20tv.png" group-title="Ulusal Kanallar",STAR TV DİZİLER
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/Oktay2617/gunestv/main/tv_logo/star%20tv.png" group-title="Ulusal Kanallar", STAR TV DİZİLER
 https://www.startv.com.tr/
 
 # ==================== SHOW TV DİZİLER ====================
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/Oktay2617/gunestv/main/tv_logo/show%20tv.png" group-title="Ulusal Kanallar",SHOW TV DİZİLER
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/Oktay2617/gunestv/main/tv_logo/show%20tv.png" group-title="Ulusal Kanallar", SHOW TV DİZİLER
 https://www.showtv.com.tr/diziler
 
 # ==================== ATV DİZİLER ====================
@@ -40,8 +40,8 @@ https://puhutv.com/dizi
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSo12O-hMhwiesvF2q0BMz43PTUaH5v9ahzuHIUz7p&s=10" group-title="Dizi Siteleri", AVŞAR DİZİ İZLE
 https://www.avsarfilm.com.tr/dizi
 
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3uYUG6htKHpZrsgCoAYhxMb_C1uWhSXnPoNK5K2af4A&s=10" group-title="Dizi Siteleri",JUST DİZİ İZLE https://www.justwatch.com/tr/filmler
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3uYUG6htKHpZrsgCoAYhxMb_C1uWhSXnPoNK5K2af4A&s=10" group-title="Dizi Siteleri", JUST DİZİ İZLE
+https://www.justwatch.com/tr/filmler
 
-#EXTINF:-1 tvg-logo="https://www.citypng.com/public/uploads/preview/hd-official-youtube-yt-logo-png-701751694786680qxacfiwgqw.png
-" group-title="Dizi Siteleri",YOUTUBE DİZİ İZLE
+#EXTINF:-1 tvg-logo="https://www.citypng.com/public/uploads/preview/hd-official-youtube-yt-logo-png-701751694786680qxacfiwgqw.png" group-title="Dizi Siteleri", YOUTUBE DİZİ İZLE
 https://www.youtube.com/?app=desktop
