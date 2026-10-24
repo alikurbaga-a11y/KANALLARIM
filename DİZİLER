@@ -28,6 +28,8 @@ https://www.atv.com.tr/diziler
 https://www.kanald.com.tr/
 
 # ==================== DİZİ SİTELERİ ====================
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5ZNbSkB-ZdoDvW586M0dzGUMBOnLdzhpAr57jsaEWDw&s=10" group-title="TR Dizi", TR Dizi İzle TV
+https://www.trdiziizle.tv/tr2/
 
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL02JxEi-J9NZCFA9_jsU8_3J02z3pzx4UL1_U6kohbw&s",HD FİLM CEHENNEMİ - YABANCI DİZİ
 https://www.hdfilmcehennemi.nl/yabancidiziizle-5/
