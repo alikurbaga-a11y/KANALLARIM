@@ -1,0 +1,12 @@
+#EXTM3U
+
+# ==================== DOĞA RESİMLERİ ====================
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTQ0vAI95mh64iCqQ0p0lURQZK0Yl8M2Bc3jur304qnw&s",DOĞA MANZARASI 1
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTQ0vAI95mh64iCqQ0p0lURQZK0Yl8M2Bc3jur304qnw&s
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSy19_ntD8Q0es-SdXjSOKTjMN8MoNao8PRgoB_IPXH_x4wCAXiC6cBTk&s",DOĞA MANZARASI 2
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSy19_ntD8Q0es-SdXjSOKTjMN8MoNao8PRgoB_IPXH_x4wCAXiC6cBTk&s
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYHGgObtSn6zmfWgsO75ZdR2MpYHBFjvO9q7YJ50oPR7bVDeh2FbJQZnE&s",DOĞA MANZARASI 3
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYHGgObtSn6zmfWgsO75ZdR2MpYHBFjvO9q7YJ50oPR7bVDeh2FbJQZnE&s

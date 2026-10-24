@@ -1,0 +1,33 @@
+#EXTM3U
+
+# ==================== TRT 1 CANLI ====================
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/TRT_1_logo_%282021-%29.svg/960px-TRT_1_logo_%282021-%29.svg.png",TRT 1 CANLI
+https://www.tabii.com/tr/watch/live/trt1?trackId=150002
+
+# ==================== NOW TV CANLI ====================
+#EXTINF:-1 tvg-logo="https://i.ibb.co/0DpKtzT/nowtvturk.png",NOW TV CANLI
+https://www.nowtv.com.tr/canli-yayin
+
+# ==================== STAR TV CANLI ====================
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/Oktay2617/gunestv/main/tv_logo/star%20tv.png",STAR TV CANLI
+https://www.startv.com.tr/canli-yayin
+
+# ==================== SHOW TV CANLI ====================
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/Oktay2617/gunestv/main/tv_logo/show%20tv.png",SHOW TV CANLI
+https://www.showtv.com.tr/canli-yayin
+
+# ==================== ATV CANLI ====================
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/Oktay2617/tv-logos/main/countries/turkey/atv.png",ATV CANLI
+https://www.atv.com.tr/canli-yayin
+
+# ==================== KANAL D CANLI ====================
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/Oktay2617/gunestv/main/tv_logo/kanal-d.png",KANAL D CANLI
+https://www.kanald.com.tr/
+
+# ==================== TV 8 CANLI ====================
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/Oktay2617/gunestv/main/tv_logo/tv8.png",TV 8 CANLI
+https://www.tv8.com.tr/canli-yayin
+
+# ==================== BEYAZ TV CANLI ====================
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/Oktay2617/gunestv/main/tv_logo/beyaz-tv.png",BEYAZ TV CANLI
+https://beyaztv.com.tr/canli-yayin
