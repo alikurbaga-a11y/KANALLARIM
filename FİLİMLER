@@ -1,32 +1,25 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="
-https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHeQmFRbz9PC-MaF0qablzA1T6nMM687e7GKyWt6K7SA&s=10",FUL HD FİLM İZLESENE
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHeQmFRbz9PC-MaF0qablzA1T6nMM687e7GKyWt6K7SA&s=10", FULL HD FİLM İZLESENE
 https://www.fullhdfilmizlesene.now/
 
-#EXTINF:-1 tvg-logo="
-https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpAZdBRaw2tf8UVenDX3cnCQWkrbTIwjf-pXiAc6rj-w&s=10",FİLM MAKİNESİ
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpAZdBRaw2tf8UVenDX3cnCQWkrbTIwjf-pXiAc6rj-w&s=10", FİLM MAKİNESİ
 https://filmmakinesi.to/
 
-#EXTINF:-1 tvg-logo="
-https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPV_bm3hXg-a_tgefwJqF1zEwABhH1NvXD_QqKxpOu7Q&s=10",HD FİLM CEHENNEMİ
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPV_bm3hXg-a_tgefwJqF1zEwABhH1NvXD_QqKxpOu7Q&s=10", HD FİLM CEHENNEMİ
 https://www.hdfilmcehennemi.nl/
 
-#EXTINF:-1 tvg-logo="
-https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa4Rmy3UNiGWRcc3wwJedBcEWSHNJMogqljJCfYFdX4w&s=10",ULTRA FİLM İZLE
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa4Rmy3UNiGWRcc3wwJedBcEWSHNJMogqljJCfYFdX4w&s=10", ULTRA FİLM İZLE
 https://ufilmizle.com/
 
-#EXTINF:-1 tvg-logo="
-https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj8oty0T54_cm_mM322BTZ3uQsEaCM5uu7mQ3AAyUPEQ&s=10",JUST WATCH FİLİM İZLE
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj8oty0T54_cm_mM322BTZ3uQsEaCM5uu7mQ3AAyUPEQ&s=10", JUST WATCH FİLİM İZLE
 https://www.justwatch.com/tr/filmler
 
-#EXTINF:-1 tvg-logo="
-https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ8Yn2YBXQHS8rSaTe91a-HLuLOrJCFbIDSpk-MYHNsg&s",AVŞAR FİLM İZLE
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ8Yn2YBXQHS8rSaTe91a-HLuLOrJCFbIDSpk-MYHNsg&s", AVŞAR FİLM İZLE
 https://www.avsarfilm.com.tr/
 
-#EXTINF:-1 tvg-logo="
-https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJWinsMY854aiJb7pbUzR7YFk3FGqC7fY6Es3UMCc3QA&s=10",FULL FİLM İZLE
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJWinsMY854aiJb7pbUzR7YFk3FGqC7fY6Es3UMCc3QA&s=10", FULL FİLM İZLE
 https://fullfilmizle.fit/
 
-#EXTINF:-1 tvg-logo="
-https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQybqjRw3sd6z8xJoVAGrLGRhSaJmZ_dnN9XEs4zGpoPg&s=10",YOUTUBE FİLM İZLE
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQybqjRw3sd6z8xJoVAGrLGRhSaJmZ_dnN9XEs4zGpoPg&s=10", YOUTUBE FİLM İZLE
 https://www.youtube.com/?app=desktop
