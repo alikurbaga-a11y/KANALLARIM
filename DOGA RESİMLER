@@ -1,12 +1,35 @@
 #EXTM3U
 
-# ==================== DOĞA RESİMLERİ ====================
+# ==================== MANZARA RESİMLERİ ====================
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_BztKXbzsR6LKkRVutrBbkr1CqEGctPDzMh_HbfRFFdO2s_7yQwELukuK&s=10" group-title="Manzara Resimleri", MANZARA RESMİ 1
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_BztKXbzsR6LKkRVutrBbkr1CqEGctPDzMh_HbfRFFdO2s_7yQwELukuK&s=10
 
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTQ0vAI95mh64iCqQ0p0lURQZK0Yl8M2Bc3jur304qnw&s",DOĞA MANZARASI 1
-https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTQ0vAI95mh64iCqQ0p0lURQZK0Yl8M2Bc3jur304qnw&s
+#EXTINF:-1 tvg-logo="https://i.pinimg.com/736x/55/a7/40/55a740ac9cae4c678646785c8c82766a.jpg" group-title="Manzara Resimleri", MANZARA RESMİ 2
+https://i.pinimg.com/736x/55/a7/40/55a740ac9cae4c678646785c8c82766a.jpg
 
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSy19_ntD8Q0es-SdXjSOKTjMN8MoNao8PRgoB_IPXH_x4wCAXiC6cBTk&s",DOĞA MANZARASI 2
-https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSy19_ntD8Q0es-SdXjSOKTjMN8MoNao8PRgoB_IPXH_x4wCAXiC6cBTk&s
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2dycx3O-a-eYPcaraNQajXBAhk_l-fLbgoH6u053NRQ&s" group-title="Manzara Resimleri", MANZARA RESMİ 3
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2dycx3O-a-eYPcaraNQajXBAhk_l-fLbgoH6u053NRQ&s
 
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYHGgObtSn6zmfWgsO75ZdR2MpYHBFjvO9q7YJ50oPR7bVDeh2FbJQZnE&s",DOĞA MANZARASI 3
-https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYHGgObtSn6zmfWgsO75ZdR2MpYHBFjvO9q7YJ50oPR7bVDeh2FbJQZnE&s
+#EXTINF:-1 tvg-logo="https://img.magnific.com/premium-photo/snowcapped-mountain-peaks-reflected-calm-lake-sunrise_890859-40514.jpg?semt=ais_hybrid&w=740&q=80" group-title="Manzara Resimleri", MANZARA RESMİ 4 (Karlı Dağ Göl Yansıması)
+https://img.magnific.com/premium-photo/snowcapped-mountain-peaks-reflected-calm-lake-sunrise_890859-40514.jpg?semt=ais_hybrid&w=740&q=80
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR04K1b7QpyYIJK64Pn20iWmWAVxvz_h-lK87IwkyGciQ&s=10" group-title="Manzara Resimleri", MANZARA RESMİ 5
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR04K1b7QpyYIJK64Pn20iWmWAVxvz_h-lK87IwkyGciQ&s=10
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQBkXJfUr3BsWOr_BgozXH7i_g0-sTGUOFeY5-upkvmg&s=10" group-title="Manzara Resimleri", MANZARA RESMİ 6
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQBkXJfUr3BsWOr_BgozXH7i_g0-sTGUOFeY5-upkvmg&s=10
+
+#EXTINF:-1 tvg-logo="https://c4.wallpaperflare.com/wallpaper/1018/556/1013/nice-mountains-images-photography-1920x1080-wallpaper-preview.jpg" group-title="Manzara Resimleri", MANZARA RESMİ 7 (Dağ Manzarası)
+https://c4.wallpaperflare.com/wallpaper/1018/556/1013/nice-mountains-images-photography-1920x1080-wallpaper-preview.jpg
+
+#EXTINF:-1 tvg-logo="https://www.reddit.com/r/wallpapers/comments/15dg4p7/beautiful_scenery_wallpaper_for_your_desktop_1920/" group-title="Manzara Resimleri", MANZARA RESMİ 8 (Reddit Scenery)
+https://www.reddit.com/r/wallpapers/comments/15dg4p7/beautiful_scenery_wallpaper_for_your_desktop_1920/
+
+#EXTINF:-1 tvg-logo="https://www.reddit.com/r/wallpapers/comments/8ixf6i/nature_wallpaper1920_1080/" group-title="Manzara Resimleri", MANZARA RESMİ 9 (Reddit Nature)
+https://www.reddit.com/r/wallpapers/comments/8ixf6i/nature_wallpaper1920_1080/
+
+#EXTINF:-1 tvg-logo="https://image.shutterstock.com/image-photo/image-260nw-2465595913.jpg" group-title="Manzara Resimleri", MANZARA RESMİ 10 (Shutterstock)
+https://image.shutterstock.com/image-photo/image-260nw-2465595913.jpg
+
+#EXTINF:-1 tvg-logo="https://3dduvarkagitlari.com/Content/images/2026/1/3/l/3dduvarkagitlari-aa8c1086.jpg" group-title="Manzara Resimleri", MANZARA RESMİ 11 (3D Duvar Kağıdı)
+https://3dduvarkagitlari.com/Content/images/2026/1/3/l/3dduvarkagitlari-aa8c1086.jpg
