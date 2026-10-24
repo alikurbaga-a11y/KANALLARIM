@@ -25,7 +25,7 @@ https://www.atv.com.tr/diziler
 https://www.kanald.com.tr/
 
 # ==================== DİZİ SİTELERİ ====================
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5ZNbSkB-ZdoDvW586M0dzGUMBOnLdzhpAr57jsaEWDw&s=10" group-title="Dizi Siteleri", TR Dizi İzle TV
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5ZNbSkB-ZdoDvW586M0dzGUMBOnLdzhpAr57jsaEWDw&s=10" group-title="Dizi Siteleri", TRT 1 DİZİ İZLE 
 https://www.trdiziizle.tv/tr2/
 
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL02JxEi-J9NZCFA9_jsU8_3J02z3pzx4UL1_U6kohbw&s" group-title="Dizi Siteleri", HD FİLM CEHENNEMİ - YABANCI DİZİ
@@ -33,3 +33,16 @@ https://www.hdfilmcehennemi.nl/yabancidiziizle-5/
 
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpAZdBRaw2tf8UVenDX3cnCQWkrbTIwjf-pXiAc6rj-w&s=10" group-title="Dizi Siteleri", FİLM MAKİNESİ - YABANCI DİZİ
 https://filmmakinesi.to/yabanci-dizi-izle-2/
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQshHoFNAJnx_0_tugdO_SrEXTWGIvxJqi2OmxZpf7TA&s" group-title="Dizi Siteleri", PUHU DİZİ İZLE
+https://puhutv.com/dizi
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSo12O-hMhwiesvF2q0BMz43PTUaH5v9ahzuHIUz7p&s=10" group-title="Dizi Siteleri", AVŞAR DİZİ İZLE
+https://www.avsarfilm.com.tr/dizi
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3uYUG6htKHpZrsgCoAYhxMb_C1uWhSXnPoNK5K2af4A&s=10" group-title="Dizi Siteleri", JUST DİZİ İZLE
+https://www.justwatch.com/tr/filmler
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSGXJxcovH9znI4sWUbbdkmef9V5ElgzXSx_BQpGVkrw&s=10
+" group-title="Dizi Siteleri", YOUTUBE DİZİ İZLE
+https://www.youtube.com/?app=desktop
