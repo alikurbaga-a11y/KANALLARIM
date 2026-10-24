@@ -7,15 +7,15 @@
 https://www.trt1.com.tr/diziler
 
 # ==================== NOW TV DİZİLER ====================
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/Oktay2617/gunestv/main/tv_logo/now-tr.png",NOW TV DİZİ İZLE
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/Oktay2617/gunestv/main/tv_logo/now-tr.png",NOW TV DİZİLER
 https://www.nowtv.com.tr/dizi-izle
 
 # ==================== STAR TV DİZİLER ====================
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/Oktay2617/gunestv/main/tv_logo/star%20tv.png",STAR TV DİZİ
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/Oktay2617/gunestv/main/tv_logo/star%20tv.png",STAR TV DİZİLER
 https://www.startv.com.tr/
 
 # ==================== SHOW TV DİZİLER ====================
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/Oktay2617/gunestv/main/tv_logo/show%20tv.png",SHOW TV DİZİ
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/Oktay2617/gunestv/main/tv_logo/show%20tv.png",SHOW TV DİZİLER
 https://www.showtv.com.tr/diziler
 
 # ==================== ATV DİZİLER ====================
@@ -23,7 +23,7 @@ https://www.showtv.com.tr/diziler
 https://www.atv.com.tr/diziler
 
 # ==================== KANAL D DİZİLER ====================
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/Oktay2617/gunestv/main/tv_logo/kanal-d.png",KANAL D DİZİ İZLE
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/Oktay2617/gunestv/main/tv_logo/kanal-d.png",KANAL D DİZİLER
 https://www.kanald.com.tr/
 
 # ==================== DİZİ SİTELERİ ====================
