@@ -1,7 +1,5 @@
-[
-    {
-        "name": "YAGMUR",
-        "logo": "",
-        "url": "https://youtu.be/juGEQx6TKc8?si=r4z4HGZjW6NQAQ6i"
-    }
-]
+#EXTM3U
+
+#EXTINF:-1 tvg-logo="",YAGMUR
+https://youtu.be/juGEQx6TKc8?si=r4z4HGZjW6NQAQ6i
+
