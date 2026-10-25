@@ -1,13 +1,13 @@
 #EXTM3U
 
-#EXTINF:-
-1 tvg-logo="",YAGMUR
+#EXTINF:-1
+tvg-logo="",YAGMUR
 https://youtu.be/juGEQx6TKc8
 
-#EXTINF:-
-1 tvg-logo="",YAGMUR 2
+#EXTINF:-1
+tvg-logo="",YAGMUR 2
 https://www.youtube.com/watch?v=3mst47Uu3IU
 
-#EXTINF:-
-1 tvg-logo="",YAGMUR 3
+#EXTINF:-1
+tvg-logo="",YAGMUR 3
 https://www.youtube.com/watch?v=tJgDYjrDLMA
