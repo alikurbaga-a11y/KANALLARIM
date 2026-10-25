@@ -21,13 +21,11 @@ https://www.avsarfilm.com.tr/
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJWinsMY854aiJb7pbUzR7YFk3FGqC7fY6Es3UMCc3QA&s=10", FULL FİLM İZLE
 https://fullfilmizle.fit/
 
-#EXTINF:-1
-tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOrl8YL8UC23R2EkJs4PsbeQ8N5P1iYcDDax8UAyaQxA&s=10
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOrl8YL8UC23R2EkJs4PsbeQ8N5P1iYcDDax8UAyaQxA&s=10", PUHUTV
 https://puhutv.com/
 
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK4S-mU7EbxmJIZNPsg_suDUyu9diQcY3pJ_s0ljIcoA&s=10
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK4S-mU7EbxmJIZNPsg_suDUyu9diQcY3pJ_s0ljIcoA&s=10", TABİİ
 https://www.tabii.com/
 
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQybqjRw3sd6z8xJoVAGrLGRhSaJmZ_dnN9XEs4zGpoPg&s=10", YOUTUBE FİLM İZLE
 https://www.youtube.com/?app=desktop
-
