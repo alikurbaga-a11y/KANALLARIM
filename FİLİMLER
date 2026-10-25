@@ -21,5 +21,12 @@ https://www.avsarfilm.com.tr/
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJWinsMY854aiJb7pbUzR7YFk3FGqC7fY6Es3UMCc3QA&s=10", FULL FİLM İZLE
 https://fullfilmizle.fit/
 
+#EXTINF:-1 tvg-logo="LOGO_LİNKİ", PUHUTV
+https://puhutv.com/
+
+#EXTINF:-1 tvg-logo="LOGO_LİNKİ", TABİİ
+https://www.tabii.com/
+
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQybqjRw3sd6z8xJoVAGrLGRhSaJmZ_dnN9XEs4zGpoPg&s=10", YOUTUBE FİLM İZLE
 https://www.youtube.com/?app=desktop
+
