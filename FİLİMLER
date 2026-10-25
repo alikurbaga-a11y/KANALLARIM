@@ -1,52 +1,31 @@
-[
-  {
-    "title": "FULL HD FİLM İZLESENE",
-    "url": "https://www.fullhdfilmizlesene.now/",
-    "img": "FİLM RESİMLERİ/FULL HD FİLM İZLESENE.jpg"
-  },
-  {
-    "title": "FİLM MAKİNESİ",
-    "url": "https://filmmakinesi.to/",
-    "img": "FİLM RESİMLERİ/FİLM MAKİNESİ.jpg"
-  },
-  {
-    "title": "HD FİLM CEHENNEMİ",
-    "url": "https://www.hdfilmcehennemi.nl/",
-    "img": "FİLM RESİMLERİ/HD FİLM CEHENNEMİ.jpg"
-  },
-  {
-    "title": "ULTRA FİLM İZLE",
-    "url": "https://ufilmizle.com/",
-    "img": "FİLM RESİMLERİ/ULTRA FİLM İZLE.jpg"
-  },
-  {
-    "title": "JUST WATCH FİLİM İZLE",
-    "url": "https://www.justwatch.com/tr/filmler",
-    "img": "FİLM RESİMLERİ/JUST WATCH FİLİM İZLE.jpg"
-  },
-  {
-    "title": "AVŞAR FİLM İZLE",
-    "url": "https://www.avsarfilm.com.tr/",
-    "img": "FİLM RESİMLERİ/AVŞAR FİLM İZLE.jpg"
-  },
-  {
-    "title": "FULL FİLM İZLE",
-    "url": "https://fullfilmizle.fit/",
-    "img": "FİLM RESİMLERİ/FULL FİLM İZLE.jpg"
-  },
-  {
-    "title": "PUHUTV",
-    "url": "https://puhutv.com/",
-    "img": "FİLM RESİMLERİ/PUHUTV.jpg"
-  },
-  {
-    "title": "TABİİ",
-    "url": "https://www.tabii.com/",
-    "img": "FİLM RESİMLERİ/TABII.jpg"
-  },
-  {
-    "title": "YOUTUBE FİLM İZLE",
-    "url": "https://www.youtube.com/?app=desktop",
-    "img": "FİLM RESİMLERİ/YOUTUBE FİLM İZLE.jpg"
-  }
-]
+#EXTM3U
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ8Yn2YBXQHS8rSaTe91a-HLuLOrJCFbIDSpk-MYHNsg&s",AVŞAR FİLM İZLE
+https://www.avsarfilm.com.tr/
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpAZdBRaw2tf8UVenDX3cnCQWkrbTIwjf-pXiAc6rj-w&s=10",FİLM MAKİNESİ
+https://filmmakinesi.to/
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJWinsMY854aiJb7pbUzR7YFk3FGqC7fY6Es3UMCc3QA&s=10",FULL FİLM İZLE
+https://fullfilmizle.fit/
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHeQmFRbz9PC-MaF0qablzA1T6nMM687e7GKyWt6K7SA&s=10",FULL HD FİLM İZLESENE
+https://www.fullhdfilmizlesene.now/
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPV_bm3hXg-a_tgefwJqF1zEwABhH1NvXD_QqKxpOu7Q&s=10",HD FİLM CEHENNEMİ
+https://www.hdfilmcehennemi.nl/
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj8oty0T54_cm_mM322BTZ3uQsEaCM5uu7mQ3AAyUPEQ&s=10",JUST WATCH FİLİM İZLE
+https://www.justwatch.com/tr/filmler
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOrl8YL8UC23R2EkJs4PsbeQ8N5P1iYcDDax8UAyaQxA&s=10",PUHUTV
+https://puhutv.com/
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK4S-mU7EbxmJIZNPsg_suDUyu9diQcY3pJ_s0ljIcoA&s=10",TABİİ
+https://www.tabii.com/
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa4Rmy3UNiGWRcc3wwJedBcEWSHNJMogqljJCfYFdX4w&s=10",ULTRA FİLM İZLE
+https://ufilmizle.com/
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQybqjRw3sd6z8xJoVAGrLGRhSaJmZ_dnN9XEs4zGpoPg&s=10",YOUTUBE FİLM İZLE
+https://www.youtube.com/?app=desktop
