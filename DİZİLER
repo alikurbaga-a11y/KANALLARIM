@@ -43,5 +43,11 @@ https://www.avsarfilm.com.tr/dizi
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3uYUG6htKHpZrsgCoAYhxMb_C1uWhSXnPoNK5K2af4A&s=10" group-title="Dizi Siteleri", JUST DİZİ İZLE
 https://www.justwatch.com/tr/filmler
 
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOrl8YL8UC23R2EkJs4PsbeQ8N5P1iYcDDax8UAyaQxA&s=10", PUHUTV
+https://puhutv.com/
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK4S-mU7EbxmJIZNPsg_suDUyu9diQcY3pJ_s0ljIcoA&s=10", TABİİ
+https://www.tabii.com/
+
 #EXTINF:-1 tvg-logo="https://www.citypng.com/public/uploads/preview/hd-official-youtube-yt-logo-png-701751694786680qxacfiwgqw.png" group-title="Dizi Siteleri", YOUTUBE DİZİ İZLE
 https://www.youtube.com/?app=desktop
