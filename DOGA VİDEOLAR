@@ -1,16 +1,25 @@
 #EXTM3U
-
-#EXTINF:-1 tvg-logo="",YAGMUR
-https://youtu.be/juGEQx6TKc8
-
-#EXTINF:-1 tvg-logo="",YAGMUR 2
-https://www.youtube.com/watch?v=3mst47Uu3IU
-
-#EXTINF:-1 tvg-logo="",YAGMUR 3
+#EXTINF:-1 tvg-logo="",DOGA VIDEO 1
+https://www.youtube.com/watch?v=tJgDYjrDLMA
+#EXTINF:-1 tvg-logo="",DOGA VIDEO 2
 https://www.youtube.com/watch?v=LyLhGlLXEos
-
-#EXTINF:-1 tvg-logo="",YAGMUR 4
+#EXTINF:-1 tvg-logo="",DOGA VIDEO 3
+https://www.youtube.com/watch?v=im05Bg2qL9w
+#EXTINF:-1 tvg-logo="",DOGA VIDEO 4
+https://www.youtube.com/watch?v=1aKEQHoVyGM
+#EXTINF:-1 tvg-logo="",DOGA VIDEO 5
+https://www.youtube.com/watch?v=rLRT95A53eA
+#EXTINF:-1 tvg-logo="",DOGA VIDEO 6
+https://www.youtube.com/watch?v=bj0C_6mSPZ0
+#EXTINF:-1 tvg-logo="",DOGA VIDEO 7
+https://www.youtube.com/watch?v=_61n6jQA6Fw
+#EXTINF:-1 tvg-logo="",DOGA VIDEO 8
+https://www.youtube.com/watch?v=0Ti4FBJg8_8
+#EXTINF:-1 tvg-logo="",DOGA VIDEO 9
+https://www.youtube.com/watch?v=juGEQx6TKc8
+#EXTINF:-1 tvg-logo="",DOGA VIDEO 10
+https://www.youtube.com/watch?v=3mst47Uu3IU
+#EXTINF:-1 tvg-logo="",DOGA VIDEO 11
 https://www.youtube.com/watch?v=7kN_DF_NJGQ
-
-#EXTINF:-1 tvg-logo="",YAGMUR 5
+#EXTINF:-1 tvg-logo="",DOGA VIDEO 12
 https://www.youtube.com/watch?v=rwj_fFwMI9Y
