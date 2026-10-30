@@ -1,98 +1,348 @@
-#EXTM3U
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>MEMOLİ TV</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- FontAwesome for TV icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- HLS.js for Live Stream (.m3u8) Support -->
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<style>
+  /* Koyu Tema Varsayılan Stil */
+  body.dark-theme {
+    background-color: #080b11;
+    color: #f3f4f6;
+  }
+  body.dark-theme .bg-main { background-color: #080b11; }
+  body.dark-theme .bg-card { background-color: #0f172a; }
+  body.dark-theme .bg-nav { background-color: rgba(2, 6, 23, 0.95); }
+  body.dark-theme .text-main { color: #f3f4f6; }
+  body.dark-theme .border-main { border-color: #1e293b; }
 
-#EXTINF:-1 tvg-logo="None" group-title="HD Film Cehennemi", Ruhlar Bölgesi Aramızdalar - Insidious Out of the Further
-https://www.hdfilmcehennemi.nl/insidious-out-of-the-further-26/
+  /* Açık Tema Stil */
+  body.light-theme {
+    background-color: #f1f5f9;
+    color: #0f172a;
+  }
+  body.light-theme .bg-main { background-color: #f1f5f9; }
+  body.light-theme .bg-card { background-color: #ffffff; }
+  body.light-theme .bg-nav { background-color: rgba(255, 255, 255, 0.95); }
+  body.light-theme .text-main { color: #0f172a; }
+  body.light-theme .border-main { border-color: #cbd5e1; }
+  body.light-theme header { background: linear-gradient(180deg, #ffffff 0%, #e2e8f0 100%); border-color: #cbd5e1; }
+  body.light-theme input { background-color: #ffffff; color: #0f172a; border-color: #94a3b8; }
 
-#EXTINF:-1 tvg-logo="None" group-title="HD Film Cehennemi", Örümcek Adam Yepyeni Bir Gün - Spider Man Brand New Day
-https://www.hdfilmcehennemi.nl/spider-man-brand-new-day-2/
+  /* TV Box İçin Optimize Edilmiş 8'li Sütun Grid Yapısı */
+  .tv-grid {
+    display: grid;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    gap: 10px;
+  }
+  @media (max-width: 1536px) {
+    .tv-grid { grid-template-columns: repeat(7, minmax(0, 1fr)); }
+  }
+  @media (max-width: 1280px) {
+    .tv-grid { grid-template-columns: repeat(10, minmax(0, 1fr)); }
+  }
+  @media (max-width: 768px) {
+    .tv-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  }
 
-#EXTINF:-1 tvg-logo="None" group-title="HD Film Cehennemi", Mayday
-https://www.hdfilmcehennemi.nl/mayday-hdf-2026/
+  /* Custom TV Remote Focus Styles */
+  .tv-card {
+    transition: transform 0.2s cubic-bezier(0.1, 0.9, 0.2, 1), box-shadow 0.2s ease, border-color 0.2s ease;
+    border: 2px solid transparent;
+  }
+  .tv-card.tv-focused {
+    transform: scale(1.06) translateY(-3px);
+    border-color: #ef4444 !important;
+    box-shadow: 0 0 20px rgba(239, 68, 68, 0.8);
+    z-index: 50;
+    outline: none;
+  }
 
-#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/images/list/poster/disclosure-day.webp" group-title="HD Film Cehennemi", İfşa Günü - Disclosure Day
-https://www.hdfilmcehennemi.nl/disclosure-day/
+  /* BUTON AKTİF EFEKTİ */
+  .nav-btn {
+    transition: all 0.25s cubic-bezier(0.1, 0.9, 0.2, 1);
+  }
+  .nav-btn.active-btn {
+    background-color: #dc2626 !important;
+    color: #ffffff !important;
+    border-color: #f87171 !important;
+    box-shadow: 0 0 20px rgba(239, 68, 68, 0.8);
+    transform: scale(1.04) translateY(-1px);
+  }
 
-#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/images/list/poster/supergirl-hdfc.webp" group-title="HD Film Cehennemi", Supergirl
-https://www.hdfilmcehennemi.nl/supergirl-2026-hdfc-8/
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0f172a;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 3px;
+  }
+  </style>
+</head>
+<body class="dark-theme min-h-screen flex flex-col justify-between selection:bg-red-600 selection:text-white pb-28">
 
-#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/images/list/poster/evil-dead-burn.webp" group-title="HD Film Cehennemi", Kötü Ruh : Cehennem Ateşi - Evil Dead Burn
-https://www.hdfilmcehennemi.nl/evil-dead-burn-13/
+  <!-- Top Navigation & Search Bar -->
+  <header class="w-full px-5 py-2.5 sticky top-0 z-40 border-b border-main flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center space-x-3">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6MO0-bC_awFoMRYUUZKnYmbn4lZJrSAdtbBCnbQ9dlw&s=10"
+            alt="Bayrak"
+            class="w-8 h-8 rounded-lg object-cover shadow-lg shadow-red-600/30 border border-slate-700/80">
+      <div class="flex items-center gap-3">
+        <h1 class="text-lg font-black tracking-wider text-main">MEMOLİ TV</h1>
+        <!-- SAĞINA EKLENEN SAAT ALANI -->
+        <span id="liveClock" class="ml-32 px-2.5 py-1 bg-slate-900/90 border-2 border-white text-cyan-400 rounded-lg text-xs font-mono font-bold tracking-widest shadow-[0_0_12px_rgba(255,255,255,0.7)]">
+          00:00:00
+        </span>
+      </div>
+    </div>
+    
+    <!-- ÜST KISIM ARAMA ÇUBUĞU VE SOLUNDAKİ AÇILIR MENÜ -->
+    <div class="flex items-center gap-3">
+      <!-- DİĞERLERİ AÇILIR BUTON -->
+      <div class="relative">
+        <button id="dropdownToggleBtn" class="px-3 py-1.5 bg-slate-900/90 border border-slate-700/80 hover:border-red-600 text-white rounded-xl text-[11px] font-black uppercase tracking-wider flex items-center gap-2 transition cursor-pointer">
+          <i class="fa-solid fa-bars text-red-500"></i> DİĞERLERİ <i class="fa-solid fa-chevron-down text-[8px] text-slate-400"></i>
+        </button>
+        <!-- AÇILIR MENÜ -->
+        <div id="dropdownMenu" class="hidden absolute left-0 mt-2 w-48 bg-slate-900 border-2 border-slate-700 rounded-2xl shadow-2xl py-2 z-50 flex flex-col gap-1">
+          <button class="dropdown-item px-3 py-1.5 text-left text-[11px] font-bold text-slate-200 hover:bg-red-600 hover:text-white flex items-center gap-2 transition cursor-pointer" data-cat="DogaResimleri">
+            <i class="fa-solid fa-image text-emerald-400"></i> DOĞA RESİMLERİ
+          </button>
+          <button class="dropdown-item px-3 py-1.5 text-left text-[11px] font-bold text-slate-200 hover:bg-red-600 hover:text-white flex items-center gap-2 transition cursor-pointer" data-cat="DogaVideolari">
+            <i class="fa-solid fa-video text-cyan-400"></i> DOĞA VİDEOLARI
+          </button>
+          <button class="dropdown-item px-3 py-1.5 text-left text-[11px] font-bold text-amber-400 hover:bg-amber-500 hover:text-slate-950 flex items-center gap-2 transition cursor-pointer" data-cat="OzelListe">
+            <i class="fa-solid fa-list-check"></i> ÖZEL LİSTE (JSON)
+          </button>
+          <div class="border-t border-slate-800 my-1"></div>
+          <button id="openJsonModalBtn" class="px-3 py-1.5 text-left text-[11px] font-bold text-red-400 hover:bg-red-600 hover:text-white flex items-center gap-2 transition cursor-pointer">
+            <i class="fa-solid fa-file-arrow-up"></i> JSON DOSYASI EKLE
+          </button>
+        </div>
+      </div>
+      
+      <!-- Search Input -->
+      <div class="relative w-56">
+        <span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-slate-400">
+          <i class="fa-solid fa-magnifying-glass text-xs"></i>
+        </span>
+        <input type="text" id="searchInput" placeholder="İÇERİK ARA..."
+                class="w-full pl-9 pr-3 py-1.5 bg-slate-900/90 border border-slate-700/80 rounded-xl text-xs text-white placeholder-slate-400 focus:outline-none focus:border-red-600 focus:ring-1 focus:ring-red-600 transition">
+      </div>
+    </div>
 
-#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/images/list/poster/mortal-kombat-ii-2026-3.webp" group-title="HD Film Cehennemi", Mortal Kombat II
-https://www.hdfilmcehennemi.nl/mortal-kombat-ii-2026-8/
+    <!-- Active Info Banner -->
+    <div class="hidden lg:flex flex-col text-right">
+      <span id="activeTitle" class="text-xs font-bold text-red-500">İçerik Seçilmedi</span>
+    </div>
+  </header>
 
-#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/images/list/poster/masters-of-the-universe.webp" group-title="HD Film Cehennemi", Kainatın Hakimleri - Masters of the Universe
-https://www.hdfilmcehennemi.nl/masters-of-the-universe-39/
+  <!-- Main Grid Area -->
+  <main class="flex-1 px-4 py-3 max-w-[1920px] mx-auto w-full">
+    <div id="filmGrid" class="tv-grid">
+      <!-- Content populated dynamically -->
+    </div>
+    <div id="noResults" class="hidden text-center py-16 text-slate-500 text-xs">
+      Aradığınız kriterlere uygun içerik bulunamadı.
+    </div>
+  </main>
 
-#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/images/list/poster/the-death-of-robin-hood.webp" group-title="HD Film Cehennemi", Robin Hood’un Ölümü - The Death of Robin Hood
-https://www.hdfilmcehennemi.nl/the-death-of-robin-hood-45/
+  <!-- OYNATICI MODAL PENCERESİ -->
+  <div id="playerModalOverlay" class="fixed inset-0 bg-black/95 backdrop-blur-md z-[100] hidden flex flex-col items-center justify-center p-2 sm:p-6">
+    <div class="relative w-full max-w-5xl bg-slate-950 border-2 border-red-600/50 rounded-2xl shadow-2xl overflow-hidden flex flex-col">
+      <!-- Player Header -->
+      <div class="flex items-center justify-between px-4 py-2.5 bg-slate-900 border-b border-slate-800">
+        <div class="flex items-center gap-2 overflow-hidden">
+          <i class="fa-solid fa-circle-play text-red-500 text-sm"></i>
+          <h3 id="playerModalTitle" class="text-xs sm:text-sm font-bold text-white truncate">Oynatılıyor...</h3>
+        </div>
+        <button id="closePlayerModalBtn" class="px-3 py-1 bg-red-600 hover:bg-red-500 text-white rounded-lg text-xs font-bold transition flex items-center gap-1 cursor-pointer">
+          <i class="fa-solid fa-xmark"></i> KAPAT (ESC)
+        </button>
+      </div>
+      <!-- Player Area -->
+      <div class="relative w-full aspect-video bg-black flex items-center justify-center">
+        <!-- Video / Canlı Yayın (HLS) Element -->
+        <video id="internalVideoPlayer" class="w-full h-full hidden" controls autoplay></video>
+        <!-- YouTube / Web İframe Player -->
+        <iframe id="internalYoutubePlayer" class="w-full h-full hidden border-0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
 
-#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/images/list/poster/obsession-hdfc.webp" group-title="HD Film Cehennemi", Saplantı - Obsession
-https://www.hdfilmcehennemi.nl/obsession-2026-hdfc-54/
+  <!-- EN ALTTA KATEGORİ VE SAĞ ALTTA AYARLAR BUTONU -->
+  <nav class="fixed bottom-0 left-0 right-0 z-50 bg-nav backdrop-blur-md border-t border-main px-8 py-5 shadow-2xl">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-3">
+      <!-- Sol ve Orta Kategori Butonları -->
+      <div class="flex items-center gap-2 overflow-x-auto">
+        <button class="nav-btn active-btn px-8 py-5 rounded-xl text-xs font-black tracking-wider uppercase bg-slate-900 border border-slate-700 text-slate-200 hover:border-red-500 transition whitespace-nowrap flex items-center gap-1.5 cursor-pointer" data-cat="Tv1">
+        📺  TV 1
+        </button>
+        <button class="nav-btn px-8 py-5 rounded-xl text-xs font-black tracking-wider uppercase bg-slate-900 border border-slate-700 text-slate-200 hover:border-red-500 transition whitespace-nowrap flex items-center gap-1.5 cursor-pointer" data-cat="Tv2">
+       📺   TV 2
+        </button>
+        <button class="nav-btn px-8 py-5 rounded-xl text-xs font-black tracking-wider uppercase bg-slate-900 border border-slate-700 text-slate-200 hover:border-red-500 transition whitespace-nowrap flex items-center gap-1.5 cursor-pointer" data-cat="Filmler">
+      🎬    FİLMLER
+        </button>
+        <button class="nav-btn px-8 py-5 rounded-xl text-xs font-black tracking-wider uppercase bg-slate-900 border border-slate-700 text-slate-200 hover:border-red-500 transition whitespace-nowrap flex items-center gap-1.5 cursor-pointer" data-cat="Diziler">
+     🎬     DİZİLER
+        </button>
+        <button class="nav-btn px-8 py-5 rounded-xl text-xs font-black tracking-wider uppercase bg-slate-900 border border-slate-700 text-slate-200 hover:border-red-500 transition whitespace-nowrap flex items-center gap-1.5 cursor-pointer" data-cat="Radyo">
+      📻    RADYO
+        </button>
+        <!-- ÖZEL LİSTE KATEGORİSİ -->
+        <button class="nav-btn px-8 py-5 rounded-xl text-xs font-black tracking-wider uppercase bg-slate-900 border border-amber-500/50 text-amber-400 hover:border-amber-400 transition whitespace-nowrap flex items-center gap-1.5 cursor-pointer" data-cat="OzelListe">
+       🚦   ÖZEL LİSTE
+        </button>
+      </div>
+      <!-- SAĞ ALTTAN AYARLAR BUTONU -->
+      <button id="settingsBtn" class="px-8 py-5 rounded-xl text-xs font-black tracking-wider uppercase bg-slate-800 border border-slate-600 text-amber-400 hover:border-amber-400 transition whitespace-nowrap flex items-center gap-1.5 cursor-pointer shadow-lg shadow-amber-500/20">
+        <i class="">⚙️</i> AYARLAR
+      </button>
+    </div>
+  </nav>
+    
+  <!-- JSON / DOSYA YÜKLEME VE YÖNETME MODAL PENCERESİ -->
+  <div id="jsonModalOverlay" class="fixed inset-0 bg-black/85 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-slate-900 border-2 border-slate-700 rounded-2xl max-w-lg w-full p-5 shadow-2xl text-main max-h-[90vh] overflow-y-auto">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-800 mb-3">
+        <h3 class="text-base font-black uppercase text-white tracking-wide">JSON Listesi Yükle ve Yönet</h3>
+        <button id="closeJsonModalBtn" class="text-slate-400 hover:text-white text-base p-1 cursor-pointer"><i class="fa-solid fa-xmark"></i></button>
+      </div>
 
-#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/images/list/poster/the-mandalorian-and-grogu.webp" group-title="HD Film Cehennemi", Star Wars Mandalorian ve Grogu
-https://www.hdfilmcehennemi.nl/the-mandalorian-and-grogu-45/
+      <!-- KATEGORİ SEÇİMİ -->
+      <div class="mb-3">
+        <label class="block text-[10px] font-bold uppercase tracking-wider text-amber-400 mb-1">Kategori Seç</label>
+        <select id="jsonCategorySelect" class="w-full p-2 bg-slate-950 border border-amber-500/50 rounded-lg text-white text-xs focus:outline-none focus:border-red-600">
+          <option value="OzelListe">Özel Liste</option>
+          <option value="DogaResimleri">Doğa Resimleri</option>
+          <option value="DogaVideolari">Doğa Videoları</option>
+          <option value="Filmler">Filmler</option>
+          <option value="Diziler">Diziler</option>
+          <option value="Tv1">TV 1</option>
+          <option value="Tv2">TV 2</option>
+          <option value="Radyo">Radyo</option>
+        </select>
+      </div>
 
-#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/images/list/poster/project-hail-mary.webp" group-title="HD Film Cehennemi", Project Hail Mary - Kurtuluş Projesi
-https://www.hdfilmcehennemi.nl/project-hail-mary-56/
+      <div class="mb-3">
+        <label class="block text-[10px] font-bold uppercase tracking-wider text-amber-400 mb-1">Cihazdan .json Dosyası Seç</label>
+        <input type="file" id="jsonFileInput" accept=".json" class="w-full p-1.5 bg-slate-950 border border-amber-500/50 rounded-lg text-xs text-slate-300 file:mr-3 file:py-1 file:px-2.5 file:rounded-md file:border-0 file:text-[11px] file:font-black file:bg-amber-500 file:text-slate-950 hover:file:bg-amber-400 cursor-pointer">
+      </div>
+     <div class="relative flex py-1 items-center">
+        <div class="flex-grow border-t border-slate-800"></div>
+        <span class="flex-shrink mx-3 text-slate-500 text-[9px] font-bold uppercase">veya JSON metnini yapıştırın</span>
+        <div class="flex-grow border-t border-slate-800"></div>
+      </div>
+      <div class="mb-3">
+        <textarea id="jsonInputText" rows="2" placeholder="JSON metnini buraya yapıştırabilirsiniz..." class="w-full p-2 bg-slate-950 border border-slate-700 rounded-lg text-white text-xs font-mono focus:outline-none focus:border-red-600"></textarea>
+      </div>
+      <div class="flex gap-2 mb-4">
+        <button id="saveJsonDataBtn" class="flex-1 py-2 bg-red-600 hover:bg-red-500 text-white font-black text-xs uppercase rounded-lg shadow-lg shadow-red-600/40 transition cursor-pointer">
+          LİSTEYE YÜKLE
+        </button>
+        <button id="clearCustomDbBtn" class="py-2 px-3 bg-slate-800 hover:bg-slate-700 text-red-400 font-bold text-xs uppercase rounded-lg border border-slate-700 transition cursor-pointer">
+          TÜMÜNÜ SİL
+        </button>
+      </div>
 
-#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/images/list/poster/the-cycle.webp" group-title="HD Film Cehennemi", The Cycle
-https://www.hdfilmcehennemi.nl/the-cycle-2026/
+      <!-- TEK TEK SİLME / LİSTE YÖNETİM ALANI -->
+      <div class="border-t border-slate-800 pt-3">
+        <h4 class="text-xs font-bold text-amber-400 uppercase mb-2">Seçili Kategorideki İçerikler (Tek Tek Sil)</h4>
+        <div id="itemListManager" class="max-h-40 overflow-y-auto flex flex-col gap-1.5 bg-slate-950 p-2 rounded-lg border border-slate-800">
+          <!-- Dinamik dolacak -->
+        </div>
+      </div>
+    </div>
+  </div>
 
-#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/images/list/poster/surviving-hurricane-otis.webp" group-title="HD Film Cehennemi", Otis Kasırgasının Tam Ortasında - Surviving Hurricane Otis
-https://www.hdfilmcehennemi.nl/surviving-hurricane-otis-2026/
+  <!-- AYARLAR MODAL PENCERESİ -->
+  <div id="settingsOverlay" class="fixed inset-0 bg-black/85 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-slate-900 border-2 border-slate-700 rounded-2xl max-w-sm w-full p-5 shadow-2xl text-main">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-800 mb-4">
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-gear text-amber-400 text-lg"></i>
+          <h3 class="text-base font-black uppercase text-white tracking-wide">Uygulama Ayarları</h3>
+        </div>
+        <button id="closeSettingsBtn" class="text-slate-400 hover:text-white text-base p-1 cursor-pointer"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <!-- TEMA SEÇİMİ -->
+      <div class="mb-4">
+        <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-2">Görünüm Teması</label>
+        <div class="grid grid-cols-2 gap-2">
+          <button id="themeDarkBtn" class="py-2 px-3 rounded-lg font-black text-xs uppercase border border-red-600 bg-red-600/20 text-white flex items-center justify-center gap-1.5 cursor-pointer">
+            <i class="fa-solid fa-moon text-xs"></i> KOYU TEMA
+          </button>
+          <button id="themeLightBtn" class="py-2 px-3 rounded-lg font-black text-xs uppercase border border-slate-700 bg-slate-800 text-slate-300 flex items-center justify-center gap-1.5 cursor-pointer">
+            <i class="fa-solid fa-sun text-xs"></i> AÇIK TEMA
+          </button>
+        </div>
+      </div>
+      <!-- OYNATICI MODU SEÇİMİ (YENİLENEN PLAYER SEÇENEKLERİ) -->
+      <div class="mb-5">
+        <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-2">Varsayılan Oynatıcı Tercihi</label>
+        <div class="flex flex-col gap-2">
+          <button class="player-opt-btn py-2 px-3 rounded-lg font-black text-xs uppercase border border-slate-700 bg-slate-800 text-slate-300 flex items-center justify-between cursor-pointer" data-player="browser">
+            <span><i class="fa-solid fa-globe text-xs mr-2"></i> HARİCİ TARAYICI</span>
+            <i class="fa-solid fa-circle-check check-icon text-red-500 text-xs hidden"></i>
+          </button>
+                   <button class="player-opt-btn py-2 px-3 rounded-lg font-black text-xs uppercase border border-red-600 bg-red-600/20 text-white flex items-center justify-between cursor-pointer" data-player="iframe">
+            <span><i class="fa-solid fa-window-maximize text-xs mr-2"></i> İFRAME PLAYER</span>
+            <i class="fa-solid fa-circle-check check-icon text-red-500 text-xs"></i>
+          </button>
 
-#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/images/list/poster/the-last-whale-singer.webp" group-title="HD Film Cehennemi", Şarkıcı Balina - The Last Whale Singer
-https://www.hdfilmcehennemi.nl/the-last-whale-singer-2026/
+          <button class="player-opt-btn py-2 px-3 rounded-lg font-black text-xs uppercase border border-slate-700 bg-slate-800 text-slate-300 flex items-center justify-between cursor-pointer" data-player="hls">
+            <span><i class="fa-solid fa-tv text-xs mr-2"></i> CANLI (HLS) PLAYER</span>
+            <i class="fa-solid fa-circle-check check-icon text-red-500 text-xs hidden"></i>
+          </button>
 
-#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/images/list/poster/alpha-hdfc.webp" group-title="HD Film Cehennemi", Alfa - Alpha
-https://www.hdfilmcehennemi.nl/alpha-alfa-2026/
+          <button class="player-opt-btn py-2 px-3 rounded-lg font-black text-xs uppercase border border-slate-700 bg-slate-800 text-slate-300 flex items-center justify-between cursor-pointer" data-player="external">
+            <span><i class="fa-solid fa-up-right-from-square text-xs mr-2"></i> HARİCİ PLAYER (APP)</span>
+            <i class="fa-solid fa-circle-check check-icon text-red-500 text-xs hidden"></i>
+          </button>
+        </div>
+      </div>
+      <button id="saveSettingsBtn" class="w-full py-2.5 bg-red-600 hover:bg-red-500 text-white font-black text-xs uppercase rounded-lg shadow-lg shadow-red-600/40 transition cursor-pointer">
+        KAYDET VE UYGULA
+      </button>
+    </div>
+  </div>
+  
+  <script>
+    const savedCustomItems = JSON.parse(localStorage.getItem("memoli_custom_ozel_liste")) || [];
+    const savedDogaResim = JSON.parse(localStorage.getItem("memoli_custom_DogaResimleri")) || [];
+    const savedDogaVideo = JSON.parse(localStorage.getItem("memoli_custom_DogaVideolari")) || [];
+    const savedFilmler = JSON.parse(localStorage.getItem("memoli_custom_Filmler")) || [];
+    const savedDiziler = JSON.parse(localStorage.getItem("memoli_custom_Diziler")) || [];
 
-#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/images/list/poster/lego-star-wars-the-mandalorian.webp" group-title="HD Film Cehennemi", LEGO Star Wars: The Mandalorian
-https://www.hdfilmcehennemi.nl/lego-star-wars-the-mandalorian-2026/
+    const database = {
+      "Tv1": [],
+      "Tv2": [],
+      "Filmler": savedFilmler,
+      "Diziler": savedDiziler,
+      "Radyo": [],
+      "DogaResimleri": savedDogaResim,
+      "DogaVideolari": savedDogaVideo,
+      "OzelListe": savedCustomItems
+    };
 
-#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/images/list/poster/super-scam-me.webp" group-title="HD Film Cehennemi", Süper Dolandırıcılar - Super Scam Me
-https://www.hdfilmcehennemi.nl/super-scam-me-2026/
-
-#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/images/list/poster/moana.webp" group-title="HD Film Cehennemi", Moana 2026
-https://www.hdfilmcehennemi.nl/moana-2026-25/
-
-#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/images/list/poster/by-any-means.webp" group-title="HD Film Cehennemi", By Any Means
-https://www.hdfilmcehennemi.nl/by-any-means-2026/
-
-#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/images/list/poster/bad-apples-hdfc.webp" group-title="HD Film Cehennemi", Çürük Elmalar - Bad Apples
-https://www.hdfilmcehennemi.nl/bad-apples-2026/
-
-#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/images/list/poster/nutcrackers.webp" group-title="HD Film Cehennemi", Fındıkkıranlar - Nutcrackers
-https://www.hdfilmcehennemi.nl/nutcrackers-5/
-
-#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/images/list/poster/whalefall.webp" group-title="HD Film Cehennemi", Balina Düşüşü - Whalefall
-https://www.hdfilmcehennemi.nl/whalefall-2026/
-
-#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/images/list/poster/clean-hands.webp" group-title="HD Film Cehennemi", Clean Hands
-https://www.hdfilmcehennemi.nl/clean-hands-2026/
-
-#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/images/list/poster/i-can-only-imagine-2.webp" group-title="HD Film Cehennemi", I Can Only Imagine 2
-https://www.hdfilmcehennemi.nl/i-can-only-imagine-2-2026-3/
-
-#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/images/list/poster/seriously-single-too.webp" group-title="HD Film Cehennemi", Seriously Single Too
-https://www.hdfilmcehennemi.nl/seriously-single-too-2026/
-
-#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/images/list/poster/therapy-done-right.webp" group-title="HD Film Cehennemi", Sıra Dışı Bir Terapi - Therapy Done Right
-https://www.hdfilmcehennemi.nl/therapy-done-right-2026/
-
-#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/images/list/poster/masterplan.webp" group-title="HD Film Cehennemi", Esas Plan - Masterplan
-https://www.hdfilmcehennemi.nl/masterplan-2026/
-
-#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/images/list/poster/tenzing.webp" group-title="HD Film Cehennemi", Tenzing
-https://www.hdfilmcehennemi.nl/tenzing-2026/
-
-#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/images/list/poster/street-fighter-hdfc.webp" group-title="HD Film Cehennemi", Street Fighter
-https://www.hdfilmcehennemi.nl/street-fighter-hdfc/
-
-#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/images/list/poster/siccin-9.webp" group-title="HD Film Cehennemi", Siccîn 9
-https://www.hdfilmcehennemi.nl/siccin-9-2026/
-
-#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/images/list/poster/the-storm.webp" group-title="HD Film Cehennemi", Fırtına Geliyor - Stormen
-https://www.hdfilmcehennemi.nl/the-storm-2026/
-
+    const filmGrid = document.getElementById("filmGrid");
+    const activeTitle = document.getElementById("activeTitle");
+    const searchInput = document.getElementById("searchInput");
+    const noResults = document.getElementById("noResults");
+    
+    const dropdownToggleBtn = document.getElementById("dropdownToggleBtn");
+    const dropdownMenu = document.getElementById("dropdownMenu");
+    const dropdownItems = document.querySelectorAll(".dropdown-item");
+    const openJsonModalBtn = document.getElementById("openJsonModalBtn");
+    const jsonModalOverlay = document.getElementById("jsonModalO
